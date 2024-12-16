@@ -1,0 +1,95 @@
+<html lang="en-US" class="windows desktop landscape">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>El ITSVA en realidad Virtual</title>
+	<link href="../css/site.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+	<!-- ==== CONTENIDO ==== -->
+
+<body>
+
+	<div id="greywrap" name="greywrap">
+		<div class="contenedor-imagen">
+			<img src="../img/cabecera2019.png" alt="">
+		</div>
+		    <!-- Navbar -->
+			<div class="navbar">
+				<!-- Iconos a la izquierda -->
+				<div class="navbar-icons">
+					<a href="https://www.itsva.edu.mx/site/contenido/135?seccion_id=5"> <i class="fa-solid fa-chevron-left"></i></a>
+					<a href="https://www.itsva.edu.mx/"> <i class="fas fa-home"></i></a>
+				</div>
+		
+				<!-- Título centrado -->
+				<div class="navbar-title">El itsva en realidad virtual</div>
+			</div>
+
+		<div id="center-block">
+			<div class="container" id="greywrap" name="greywrap">
+				<div>
+					<div class="TEC">
+						<h2>Instrucciones</h2>
+					</div>
+					<div class="text-justify">
+						<article>
+							<p>Para iniciar el recorrido haga clic en el boton "INICIAR RECORRIDO" 
+								y se desplegara una pantalla donde podra interactuar con el recorrido 
+								virtual. Por otra parte para finalizar, haga clic en el boton
+								"FINALIZAR RECORRIDO" para cerrar la pantalla abierta.
+								&nbsp;
+							</p>
+					</div>
+					<div class="contenedor-imagen">
+						<img src="../img/Intrucciones.png" alt="">
+					</div>
+				</div>
+
+				<div class="center-content-block">
+					<h1>Recorrido Virtual</h1>
+					<iframe id="myIframe" src=""></iframe>
+				</div>
+
+				<!-- Botones para iniciar y finalizar el iframe -->
+				<div class="center-content-block">
+					<button onclick="startIframe()" id="button" class="button_left">
+						<i class="fa-solid fa-circle-play"></i>
+					    Iniciar Recorrido
+					</button>
+					<button onclick="stopIframe()" id="button" class="button_right">
+						<i class="fa-solid fa-circle-stop"></i>
+						Finalizar Recorrido
+					</button>
+				</div>
+
+				<script>
+					// Función para mostrar el iframe y cargar el recorrido
+					function startIframe() {
+					  var iframe = document.getElementById("myIframe");
+					  iframe.src = "../WEBGL/index.html"; // Establece el src para iniciar el recorrido
+					  iframe.style.display = "block"; // Muestra el iframe
+					}
+				  
+					// Función para ocultar el iframe y detener el recorrido
+					function stopIframe() {
+					  var iframe = document.getElementById("myIframe");
+					  iframe.src = ""; // Deja el src vacío para "detener" el iframe
+					  iframe.style.display = "none"; // Oculta el iframe, quitando el espacio
+					}
+				  </script>
+
+			</div>
+		</div>
+		<br>
+		<br>
+
+	</div><!-- greywrap -->
+	
+</body>
+
+</html>

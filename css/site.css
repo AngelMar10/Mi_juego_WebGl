@@ -1,0 +1,137 @@
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* Titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+.contenedor-imagen { /*Responsivo */
+    width: 100%;
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 25%;
+    /* Mantiene la proporción de la imagen */
+}
+
+
+#greywrap {
+    background: #f5f5f5;
+    margin-top: 0px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#center-block {
+    padding: 1% 10%;
+    text-align: justify;
+}
+
+.center-content-block {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+#button {
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    margin: 8px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_right {
+    background-color: rgba(232, 59, 59, 0.867);
+}
+
+.button_left {
+    background-color: rgba(24, 146, 232, 0.867);
+}
+
+#button:hover {
+    background-color: #01090f;
+    transform: scale(1.15);
+}
+
+#myIframe {
+    width: 100%;
+    height: 85vh;
+    border: none;
+    display: none;
+}
+
+
+.navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#1B396A;
+    padding: 10px;
+    color: white;
+}
+
+/* Contenedor de los iconos alineados a la izquierda */
+.navbar .navbar-icons {
+    display: flex;
+    gap: 25px;
+}
+
+/* Estilos del título centrado */
+.navbar .navbar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+}
+
+/* Estilos de los iconos */
+.navbar i {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: white; /* Mantener el color blanco */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+
+.navbar a:hover {
+    color: #aaa; /* Cambia de color al pasar el ratón */
+}
+
+
+.navbar a i {
+    color: inherit; /* Hereda el color del enlace */
+}
+
